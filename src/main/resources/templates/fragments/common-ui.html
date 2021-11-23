@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<title>Insert title here</title>
+</head>
+<body>
+
+<header class="header">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" th:href="@{/all}" style="margin-left: 40px;font-size: 24px;">SPRINGBOOT USER PROJECT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link text-white" th:href="@{/user/register}" style="font-size: 20px;">REGISTER</a>
+        
+        <!-- <a class="nav-link text-white" th:href="@{/user/all}" style="font-size: 20px;">VIEW-ALL</a> -->
+        
+        <a class="nav-link text-white" th:href="@{/user/login}" style="margin-left: 700px;font-size: 20px;">LOGIN</a>
+        <a class="nav-link text-white" th:href="@{/signout}" style="margin-left: 10px;font-size: 20px;">LOGOUT</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<footer class="footer">
+	<p
+	style="bottom: 0% ;position: absolute;width: 100%; height: 50px; text-align: center;background-color: black;
+	color: white;font-size: 22px;"
+	>@All Rights Reserved By the Developer</p>
+</footer>
+</body>
+</html>

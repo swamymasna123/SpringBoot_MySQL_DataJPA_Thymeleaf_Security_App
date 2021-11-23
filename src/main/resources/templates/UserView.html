@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div th:insert="/fragments/common-ui :: header"></div>
+<div th:insert="/fragments/common-ui :: footer"></div>
+
+	<div class="container"><hr/>
+		<div class="card col-md-4 offset-md-4 offset-md-4" style="background-color: indigo;color: white;">
+			<div class="card-body">
+				<h3 style="text-align: center;">USER VIEW PAGE</h3>
+	<table class="table table-bordered table-hover " style="color: white;font-size: 20px;">
+		<tr>
+			<th>USER-ID</th>
+			<td th:text="${ob.userId}"></td>
+		</tr>
+
+		<tr>
+			<th>USER-NAME</th>
+			<td th:text="${ob.name}"></td>
+
+		</tr>
+
+		<tr>
+			<th>USER-MAIL</th>
+			<td th:text="${ob.mailId}"></td>
+
+		</tr>
+
+		<!-- <tr>
+			<th>USER-PWD</th>
+			<td th:text="${ob.password}"></td>
+
+		</tr> -->
+
+		<tr>
+			<th>USER-ROLES</th>
+			<td th:text="${ob.roles}"></td>
+		</tr>
+
+
+	</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
